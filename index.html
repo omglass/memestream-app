@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MemeStream</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>MemeStream</h1>
+  <div id="meme-container">
+    <img id="meme-img" src="" alt="Meme">
+    <h2 id="meme-title"></h2>
+  </div>
+
+  <div id="buttons">
+    <button id="daily-btn">Get Daily Meme</button>
+    <button id="ad-btn">Watch Ad for Extra Meme</button>
+    <button id="premium-btn">Go Premium</button>
+    <button id="view-collection-btn">View Collection</button>
+  </div>
+
+  <p id="message"></p>
+
+  <div id="ad-overlay" class="hidden">
+    <p>Ad is playing…</p>
+  </div>
+
+  <div id="collection-overlay" class="hidden">
+    <h2>Your Meme Collection</h2>
+    <div id="collection-list"></div>
+    <button id="close-collection-btn" onclick="hideCollection()">Close</button>
+  </div>
+
+  <script src="memes.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
